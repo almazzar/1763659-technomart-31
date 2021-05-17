@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алмаз Зарипов](https://up.htmlacademy.ru/htmlcss/31/user/1763659).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
