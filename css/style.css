@@ -232,12 +232,13 @@ img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
 }
 
-.catalog-price p {
+.catalog-price {
   font-size: 17px;
   line-height: 18px;
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  padding: 10px 44px 10px 32px;
 }
 
 /* Pagination */
