@@ -29,9 +29,6 @@
   --pagination-item: #C5C5C5;
 }
 
-
-
-
 /* Global */
 
 body {
@@ -227,6 +224,17 @@ img {
   height: 123px;
 }
 
+.badge {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  width: 60px;
+  height: 59px;
+  font-family: "cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .main-categories-item:nth-child(1) {
   background-color: var(--categories-yellow);
   background-image: url("../img/icon-materials.svg");
@@ -408,15 +416,13 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   /* Button */
 
 .button {
-  font: inherit;
-  text-align: center;
   color: var(--basic-white);
+  background-color: var(--basic-red);
+  text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: var(--basic-red);
   border: none;
-  width: 192px;
-  height: 38px;
+  text-decoration: none;
 }
 
 .button:hover,
@@ -435,16 +441,10 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   background-color: var(--basic-black);
 }
 
-.categories-button a {
+.button-category {
   background-color: var(--basic-white);
   opacity: 0.3;
-}
-
-.categories-button a {
-  color: var(--basic-white);
-  font-family: "cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
+  color: var(--basic-white)
 }
 
 /* Contacts */
