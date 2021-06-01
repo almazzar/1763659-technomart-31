@@ -69,7 +69,7 @@ img {
   height: auto;
 }
 
-/* User navigation */
+/* Header*/
 
 .site-nav-list,
 .header-1level-list,
@@ -77,11 +77,28 @@ img {
 .main-login,
 .main-categories-list,
 .main-brands-list,
-.footer-nav-1level-list,
-.footer-nav-2level-list,
+.footer-nav-1level,
+.footer-nav-2level,
 .social-list,
 .breadcrumbs {
   list-style: none;
+}
+
+.main-header,
+.catalog-header {
+  background-color: var(--basic-background);
+}
+
+.menu-item {
+  font-family: "cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--basic-white);
 }
 
 .header-logo {
@@ -90,49 +107,21 @@ img {
   background-color: var(--basic-red);
   width: 220px;
   height: 47px;
+  display: inline-block;
 }
 
-.header-1level {
+.header-logo:focus {
+  background-color: #BA2732;
+}
+
+.header-1level,
+.site-nav  {
   background-color: var(--basic-dark);
 }
 
-.header-1level-item,
-.site-nav {
-  font-family: "cuprum", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--basic-white);
-  background-color: var(--basic-dark);
-}
-
-.header-1level-item a,
 .site-nav a {
   color: var(--basic-white);
   text-decoration: none;
-}
-
-.main-header,
-.catalog-header {
-  background-color: var(--basic-background);
-}
-
-.main-header-about a {
-  border: 3px solid var(--basic-white);
-}
-
-.header-1level-item-search {
-  background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
-}
-
-.header-1level-item-bookmark {
-  background-image: url("../img/icon-bookmark.svg");
-  background-repeat: no-repeat;
-}
-
-.header-1level-item-cart {
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
 }
 
 .site-nav a:hover {
@@ -144,21 +133,22 @@ img {
   opacity: 0.3;
 }
 
-.footer-nav-1level-list a:hover,
-.footer-nav-2level-list a:hover {
-  text-decoration: underline;
+.main-header-about a {
+  border: 3px solid var(--basic-white);
 }
 
-.footer-nav-1level-list a:focus,
-.footer-nav-2level-list a:focus {
-  opacity: 0.5;
-  text-decoration: none;
+.menu-item-search {
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
 }
 
+.menu-item-bookmark {
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+}
 
-.login-icon-password {
-  background-image: url("../img/lock.svg");
-  background-position: 270px center;
+.menu-item-cart {
+  background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
 }
 
@@ -170,20 +160,19 @@ img {
   color: var(--basic-red);
 }
 
-.main-login {
-  font-family: "cuprum", Arial, sans-serif;
+.menu-item-signin,
+.menu-item-signup {
   font-size: 21px;
   line-height: 21px;
-  color: var(--basic-black);
 }
 
-.login-link {
+.menu-item-signin {
   background-image: url("../img/icon-login.svg");
   background-repeat: no-repeat;
   display: inline-block;
 }
 
-.login-link:hover {
+.menu-item-signin:hover {
   color: var(--basic-red);
   background-image: url("../img/icon-login.svg") #3D546F;
   background-repeat: no-repeat;
@@ -442,11 +431,22 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
 
 /* Footer */
 
-.main-footer-1level {
+.footer-nav-1level a:hover,
+.footer-nav-2level a:hover {
+  text-decoration: underline;
+}
+
+.footer-nav-1level a:focus,
+.footer-nav-2level a:focus {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-1level {
   background-color: var(--basic-dark);
 }
 
-.main-footer-1level a {
+.footer-1level a {
   color: var(--basic-white);
   text-decoration: none;
   font-size: 18px;
@@ -454,7 +454,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   font-family: "cuprum", Arial, sans-serif;
 }
 
-.main-footer-2level {
+.footer-2level {
   background-color: var(--basic-extra-dark);
   color: var(--basic-white);
   font-size: 16px;
@@ -462,7 +462,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   font-family: "cuprum", Arial, sans-serif;
 }
 
-.footer-nav-2level-list a,
+.footer-nav-2level a,
 .main-footer-2level a {
   color: var(--basic-yellow);
 }
@@ -474,6 +474,11 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   height: 44px;
   background-repeat: no-repeat;
   display: inline-block;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red);
 }
 
 .social-button-vk {
