@@ -13,24 +13,24 @@
       <section class="header-1level">
         <a href="index.html" alt="Логотип Техномарта"><div class="header-logo"></div></a>
         <ul class="header-1level-list">
-          <li class="header-1level-item"><img src="img/icon-search.svg">Поиск</li>
-          <li class="header-1level-item"><img src="img/icon-bookmark.svg"><a href="#">Закладки</a></li>
-          <li class="header-1level-item"><img src="img/icon-cart.svg"><a href="#">Корзина</a></li>
+          <li class="header-1level-item header-1level-item-search"><a>Поиск</a></li>
+          <li class="header-1level-item header-1level-item-bookmark"><a href="#">Закладки</a></li>
+          <li class="header-1level-item header-1level-item-cart"><a href="#">Корзина</a></li>
           <li class="header-1level-item"><a href="#">Оформить заказ</a></li>
         </ul>
       </section>
       <section class="header-2level">
         <p class="header-2level-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="main-header-about">
-          <a class="contacts-phone" href="tel:+78005558628"><img src="img/icon-phone.svg">+7 800 555-86-28</a><br>
-          г. Санкт- Петербург, наб. Реки Карповки, 5 лит П
-        </p>
+        <div class="main-header-about">
+          <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a><br>
+          <p>г. Санкт- Петербург, наб. Реки Карповки, 5 лит П</p>
+        </div>
           <ul class="main-login">
-            <li><a class="login-link" href="#"><img src="img/icon-login.svg">Войти</a></li>
+            <li><a class="login-link" href="#">Войти</a></li>
             <li><a class="signup-link" href="#">Регистрация</a></li>
           </ul>
-        <nav class="site-navigation">
-          <ul class="site-navigation-list">
+        <nav class="site-nav">
+          <ul class="site-nav-list">
             <li><a>Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -45,17 +45,18 @@
       <main class="container">
         <section class="main-categories">
           <ul class="main-categories-list">
-            <li class="main-categories-item badge">
+            <li class="main-categories-item">
               <h2>Материалы</h2>
-              <a class="button general-button categories-button" href="#">На любой вкус</a>
+              <div class="badge"></div>
+              <a class="button categories-button" href="#">На любой вкус</a>
             </li>
             <li class="main-categories-item">
               <h2>Инструменты</h2>
-              <a class="button general-button categories-button" href="#">На все случаи</a>
+              <a class="button categories-button" href="#">На все случаи</a>
             </li>
             <li class="main-categories-item">
               <h2>Техника</h2>
-              <a class="button general-button categories-button" href="#">Для стройки</a>
+              <a class="button categories-button" href="#">Для стройки</a>
             </li>
             <li class="main-slider">
               <div class="slide1">
@@ -78,11 +79,11 @@
             </li>
             <li class="main-categories-item">
               <h2>Скидки 50%</h2>
-              <a class="button general-button categories-button" href="#">На 350 товаров</a>
+              <a class="button categories-button" href="#">На 350 товаров</a>
             </li>
             <li class="main-categories-item">
               <h2>Доставка</h2>
-              <a class="button general-button categories-button" href="#">Бесплатно</a>
+              <a class="button categories-button" href="#">Бесплатно</a>
             </li>
           </ul>
         </section>
@@ -157,12 +158,15 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <dl class="main-services-list">
-            <dt class="main-services-item"><a href="#">Доставка</a></dt>
-              <h2>Доставка</h2>
-              <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,поднимая его на ваш этаж!</dd>
+            <dt class="main-services-item-current"><a>Доставка</a></dt>
             <dt class="main-services-item"><a href="#">Гарантия</a></dt>
             <dt class="main-services-item"><a href="#">Кредит</a></dt>
           </dl>
+          <div class="service-current-info">
+            <h2>Доставка</h2>
+            <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,поднимая его на ваш этаж!
+            </dd>
+          </div>
         </section>
         <section class="main-about">
           <h2>Компания «Техномарт»</h2>
@@ -204,11 +208,11 @@
           </ul>
         </div>
         <div class="main-footer-2level">
+          <p class="footer-copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
           <div class="social-list">
-            <p class="footer-copyright">© 2010–2021 Компания «Техномарт» <br>Все права защищены</p>
-            <a class="social-button" href="#"><img src="img/icon-vk.svg" alt="Иконка вконтакте"></a>
-            <a class="social-button" href="#"><img src="img/icon-fb.svg" alt="Иконка фейсбук"></a>
-            <a class="social-button" href="#"><img src="img/icon-insta.svg" alt="Иконка инстаграмм"></a>
+            <a class="social-button social-button-vk" href="#"></a>
+            <a class="social-button social-button-fb" href="#"></a>
+            <a class="social-button social-button-insta" href="#"></a>
           </div>
           <div class="footer-feedback">
             <p>Обратная связь:<br><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
@@ -238,7 +242,7 @@
       <!-- Попап карта -->
       <section class="modal modal-map">
         <h2>Как до нас добраться</h2>
-        <!-- Здесь будет карта -->
+      <!-- Здесь будет карта -->
         <button class="modal-close" type="button">Закрыть</button>
       </section>
   </body>
