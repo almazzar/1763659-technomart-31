@@ -2,8 +2,15 @@
   --basic-black: #000000;
   --basic-extra-dark: #293449;
   --basic-dark: #32425c;
+  --basic-navfocus-dark: #1D2739;
+  --social-button: #212A3A;
+  --menuitem-focus-dark: #161D29;
   --basic-red: #EE3643;
   --basic-darkred: #8A1F27;
+  --basic-logoborder-red: #B52933;
+  --basic-logofocus-red: #BA2732;
+  --basic-logoborderfocus-red: #8D1E26;
+  --button-focus-red: #CA2C37;
   --basic-green: #63A63E;
   --basic-darkgreen: #367315;
   --basic-grey: #A9A9A9;
@@ -14,7 +21,16 @@
   --basic-background: #F1F5F7;
   --basic-extralight: #EAEAEA;
   --basic-white: #ffffff;
+  --categories-yellow: #FFBF47;
+  --categories-blue: #3BBCE3;
+  --categories-pink: #DC91D8;
+  --categories-green: #8ED78F;
+  --catalog-border-white: #EAEAEA;
+  --pagination-item: #C5C5C5;
 }
+
+
+
 
 /* Global */
 
@@ -94,6 +110,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+  background-repeat: no-repeat;
 }
 
 .menu-item a {
@@ -102,8 +119,10 @@ img {
 }
 
 .header-logo {
-  background-image: url("../img/logo-technomart.png");
+  background-image: url("../img/logo-technomart.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 5px solid var(--basic-logoborder-red);
   background-color: var(--basic-red);
   width: 220px;
   height: 47px;
@@ -111,12 +130,17 @@ img {
 }
 
 .header-logo:focus {
-  background-color: #BA2732;
+  background-color: var(--basic-logofocus-red);
+  border-bottom: 5px solid var(--basic-logoborderfocus-red);
 }
 
 .header-1level,
 .site-nav  {
   background-color: var(--basic-dark);
+}
+
+.header-1level-list a:focus {
+  opacity: 0.5;
 }
 
 .site-nav a {
@@ -129,7 +153,7 @@ img {
 }
 
 .site-nav a:focus {
-  background-color: #1D2739;
+  background-color: var(--basic-navfocus-dark);
   opacity: 0.3;
 }
 
@@ -139,17 +163,23 @@ img {
 
 .menu-item-search {
   background-image: url("../img/icon-search.svg");
-  background-repeat: no-repeat;
 }
 
 .menu-item-bookmark {
   background-image: url("../img/icon-bookmark.svg");
-  background-repeat: no-repeat;
 }
 
 .menu-item-cart {
   background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
+}
+
+.menu-item-bookmark a:focus,
+.menu-item-cart a:focus {
+  background-color: var(--menuitem-focus-dark);
+}
+
+.menu-item-order a:focus {
+  background-color: var(--basic-green);
 }
 
 .header-2level-info {
@@ -198,31 +228,31 @@ img {
 }
 
 .main-categories-item:nth-child(1) {
-  background-color: #FFBF47;
+  background-color: var(--categories-yellow);
   background-image: url("../img/icon-materials.svg");
   background-repeat: no-repeat;
 }
 
 .main-categories-item:nth-child(2) {
-  background-color: #3BBCE3;
+  background-color: var(--categories-blue);
   background-image: url("../img/icon-tools.svg");
   background-repeat: no-repeat;
 }
 
 .main-categories-item:nth-child(3) {
-  background-color: #DC91D8;
+  background-color: var(--categories-pink);
   background-image: url("../img/icon-technics.svg");
   background-repeat: no-repeat;
 }
 
 .main-categories-item:nth-child(5) {
-  background-color: #8ED78F;
+  background-color: var(--categories-green);
   background-image: url("../img/icon-discount.svg");
   background-repeat: no-repeat;
 }
 
 .main-categories-item:nth-child(6) {
-  background-color: #FFBF47;
+  background-color: var(--categories-yellow);
   background-image: url("../img/icon-delivery.svg");
   background-repeat: no-repeat;
 }
@@ -259,7 +289,7 @@ img {
 
 .catalog-item {
   background-color: var(--basic-extra-light);
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--catalog-border-white);
 }
 
 .catalog-item a {
@@ -302,20 +332,20 @@ img {
 .pagination-item a {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--catalog-border-white);
   text-decoration: none;
 }
 
 .pagination-list li {
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--catalog-border-white);
 }
 
 .pagination-item a:hover {
-  border: 1px solid #EE3643;
+  border: 1px solid var(--basic-red);
 }
 
 .pagination-item a:focus {
-  background-color: #C5C5C5;
+  background-color: var(--pagination-item);
 }
 
 .pagination-item-current a,
@@ -328,11 +358,17 @@ img {
 
 /* Brands */
 
-.main-brands-item a:hover {
+.main-brands-item {
+  width:220px;
+  height: 145px;
+  border: 1px solid var(--catalog-border-white);
+}
+
+.main-brands-item:hover {
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
 }
 
-.main-brands-item a:focus {
+.main-brands-item:focus {
   opacity: 0.5;
 }
 
@@ -385,11 +421,11 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
 
 .button:hover,
 .button:focus {
-  background-color: #CA2C37;
+  background-color: var(--button-focus-red);
 }
 
 .button:active {
-  background-color: #BA2732;
+  background-color: var(--basic-logofocus-red)
 }
 
 .button.disabled,
@@ -424,6 +460,9 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   display: inline-block;
+}
+
+.contacts-phone-footer {
 
 }
 
@@ -435,6 +474,10 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
 }
 
 /* Footer */
+
+.footer {
+  background-color: var(--basic-dark);
+}
 
 .footer-nav-1level a:hover,
 .footer-nav-2level a:hover {
@@ -463,11 +506,13 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
 
 .social-button {
   color: var(--basic-white);
-  background-color: #212A3A;
+  background-color: var(--social-button);
   width: 44px;
   height: 44px;
   background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
+  border-radius: 25px;
 }
 
 .social-button:hover,
@@ -487,10 +532,9 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   background-image: url("../img/icon-insta.svg");
 }
 
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: var(--basic-black);
-  background-color: var(--basic-white);
+.menu-item-copyright {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .catalog-info {
@@ -539,7 +583,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-light);
-  border: 2px solid #C5C5C5;
+  border: 2px solid var(--pagination-item);
 }
 
 .feedback-form input[placeholder] {
