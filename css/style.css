@@ -192,6 +192,11 @@ img {
   color: var(--basic-white);
 }
 
+.main-categories-item {
+  width: 300px;
+  height: 123px;
+}
+
 .main-categories-item:nth-child(1) {
   background-color: #FFBF47;
   background-image: url("../img/icon-materials.svg");
@@ -446,20 +451,9 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   background-color: var(--basic-dark);
 }
 
-.footer-1level a {
-  color: var(--basic-white);
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "cuprum", Arial, sans-serif;
-}
-
 .footer-2level {
   background-color: var(--basic-extra-dark);
   color: var(--basic-white);
-  font-size: 16px;
-  line-height 18px;
-  font-family: "cuprum", Arial, sans-serif;
 }
 
 .footer-nav-2level a,
@@ -503,8 +497,15 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
   background-color: var(--basic-background);
 }
 
+.footer-feedback {
+  font-family: "cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .footer-feedback a {
   text-decoration: none;
+  color: var(--basic-yellow);
 }
 
 .footer-feedback a:hover {
