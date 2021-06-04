@@ -54,17 +54,35 @@
           </section>
     </header>
     <main>
-      <section class="catalog-container">
-        <div class="breadcrumbs-container">
+      <div class="breadcrumbs-container">
         <ul class="breadcrumbs">
           <li><a class="breadcrumbs-item-home" href="index.html"></a></li>
+          <li class="breadcrumbs-item-icon"></li>
           <li><a class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs-item-icon"></li>
           <li><a class="breadcrumbs-item" href="#">Инструмент</a></li>
           <li><a class="breadcrumbs-item">Перфораторы</a></li>
         </ul>
-        </div>
+      </div>
+      <div class="h1-catalog-container">
         <h1 class="h1-catalog">Перфораторы</h1>
-        <p class="title-filter">Фильтр</p>
+      </div>
+      <div class="filter-sort-container">
+        <div class="filter-sort">
+          <p class="title-filter">Фильтр</p>
+          <section class="sort">
+            <div class="sort-wrapper">
+              <p class="title-sort">Сортировка</p>
+              <a class="button-sort button-sort-current">По цене</a>
+              <a class="button-sort" href="#">По типу</a>
+              <a class="button-sort" href="#">По функционалу</a>
+              <a class="button-arrow button-arrow-down" href="#"></a>
+              <a class="button-arrow button-arrow-up" href="#"></a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="catalog-container">
         <aside class="filter">
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-price">
@@ -114,85 +132,75 @@
             <button class="button button-filter" type="submit">Показать</button>
           </form>
         </aside>
-        <section class="title-sort">
-          <div class="sort-wrapper">
-            <p class="title-sort-p">Сортировка</p>
-            <a class="button-sort button-sort-current">По цене</a>
-            <a class="button-sort" href="#">По типу</a>
-            <a class="button-sort" href="#">По функционалу</a>
-            <a class="button-arrow button-arrow-down" href="#"></a>
-            <a class="button-arrow button-arrow-up" href="#"></a>
-          </div>
-        </section>
         <section class="catalog">
             <div class="catalog-grid">
-            <article class="catalog-item">
-              <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
-              <del>30 500 Р.</del><p>25 500 Р.</p>
-            </article>
-            <article class="catalog-item">
-              <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
-              <del>30 500 Р.</del><p>25 500 Р.</p>
-            </article>
-            <article class="catalog-item">
-              <div class="badge">Акция</div>
-              <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
-              <del>30 500 Р.</del><p>25 500 Р.</p>
-            </article>
-            <article class="catalog-item">
-              <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 3000</p></a>
-              <del>22 500 Р.</del><p>15 500 Р.</p>
-            </article>
-            <article class="catalog-item">
-              <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
-              <del>30 500 Р.</del><p>25 500 Р.</p>
-            </article>
-            <article class="catalog-item ">
-              <div class="badge">Акция</div>
-              <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 2000</p></a>
-              <p>12 500 Р.</p>
-            </article>
-            <article class="catalog-item">
-              <div class="badge">Акция</div>
-              <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 3000</p></a>
-              <del>22 500 Р.</del><p>15 500 Р.</p>
-            </article>
-            <article class="catalog-item">
-              <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
-              <del>30 500 Р.</del><p>25 500 Р.</p>
-            </article>
-            <article class="catalog-item">
-              <div class="badge">Акция</div>
-              <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 2000</p></a>
-              <p>12 500 Р.</p>
-            </article>
+              <article class="catalog-item">
+                <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
+                <del>30 500 Р.</del><p>25 500 Р.</p>
+              </article>
+              <article class="catalog-item">
+                <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
+                <del>30 500 Р.</del><p>25 500 Р.</p>
+              </article>
+              <article class="catalog-item">
+                <div class="badge">Акция</div>
+                <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
+                <del>30 500 Р.</del><p>25 500 Р.</p>
+              </article>
+              <article class="catalog-item">
+                <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 3000</p></a>
+                <del>22 500 Р.</del><p>15 500 Р.</p>
+              </article>
+              <article class="catalog-item">
+                <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
+                <del>30 500 Р.</del><p>25 500 Р.</p>
+              </article>
+              <article class="catalog-item ">
+                <div class="badge">Акция</div>
+                <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 2000</p></a>
+                <p>12 500 Р.</p>
+              </article>
+              <article class="catalog-item">
+                <div class="badge">Акция</div>
+                <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 3000</p></a>
+                <del>22 500 Р.</del><p>15 500 Р.</p>
+              </article>
+              <article class="catalog-item">
+                <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
+                <del>30 500 Р.</del><p>25 500 Р.</p>
+              </article>
+              <article class="catalog-item">
+                <div class="badge">Акция</div>
+                <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
+                <a class="button catalog-button-buy" href="#">Купить</a>
+                <a class="button catalog-button-favorite" href="#">В закладки</a>
+                <a href="#"><p>Перфоратор BOSCH BFG 2000</p></a>
+                <p>12 500 Р.</p>
+              </article>
           </div>
         </section>
         <div class="pagination-wrapper">
