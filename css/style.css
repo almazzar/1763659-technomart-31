@@ -230,6 +230,10 @@ img {
   background-color: var(--menuitem-focus-dark);
 }
 
+.menu-item-order {
+  background-color: var(--basic-green);
+}
+
 .menu-item-order a:focus {
   background-color: var(--basic-green);
 }
