@@ -14,9 +14,9 @@
         <section class="header-1level">
           <a class="header-logo" href="index.html" alt="Логотип Техномарта"></a>
           <ul class="header-1level-list">
-            <li class="menu-item menu-item-search"><a>Поиск</a></li>
-            <li class="menu-item menu-item-bookmark"><a href="#">Закладки</a></li>
-            <li class="menu-item menu-item-cart"><a href="#">Корзина</a></li>
+            <li class="menu-item"><input class="menu-item-search" type="text" placeholder="Поиск"></input></li>
+            <li class="menu-item menu-item-bookmark"><a href="#">Закладки: 0</a></li>
+            <li class="menu-item menu-item-cart"><a href="#">Корзина: 0</a></li>
             <li class="menu-item menu-item-order"><a href="#">Оформить заказ</a></li>
           </ul>
         </section>
@@ -26,18 +26,18 @@
           <p class="header-2level-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
           <div class="main-header-about">
             <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-            <p>г. Санкт- Петербург, наб. Реки Карповки, 5 лит П</p>
+            <p class="contacts-phone-adress">г. Санкт- Петербург, наб. Реки Карповки, 5 лит П</p>
           </div>
           <ul class="main-login">
-            <li><a class="menu-item menu-item-signin" href="#">Войти</a></li>
-            <li><a class="menu-item menu-item-signup" href="#">Регистрация</a></li>
+            <li><a class="main-login-signin" href="#">Войти</a></li>
+            <li><a class="main-login-signup" href="#">Регистрация</a></li>
           </ul>
         </section>
       </section>
       <section class="bar-3level">
         <nav class="site-nav">
           <ul class="site-nav-list">
-            <li class="menu-item"><a>Главная</a></li>
+            <li class="menu-item"><a href="index.html">Главная</a></li>
             <li class="menu-item"><a href="#">Компания</a></li>
             <li class="menu-item"><a href="catalog.html">Каталог</a></li>
             <li class="menu-item"><a href="#">Новости</a></li>
@@ -53,7 +53,7 @@
           <ul class="main-categories-list">
             <li class="main-categories-item main-categories-item-materials">
               <h2>Материалы</h2>
-              <div class="badge">Акция</div>
+              <div class="badge">New</div>
               <a class="button button-category" href="#">На любой вкус</a>
             </li>
             <li class="main-categories-item main-categories-item-tools">
@@ -73,15 +73,15 @@
                 <h1>Дрели</h1>
                 <p class="main-slider-info">Соседям на радость</p>
               </div>
-              <nav id="arrows">
-                <a class="button slider-button slider-button-back" href="#">Назад</a>
-                <a class="button slider-button slider-button-next" href="#">Вперед</a>
+              <nav id="slider-arrows">
+                <a class="button slider-arrow-back" href="#"></a>
+                <a class="button slider-arrow-next" href="#"></a>
               </nav>
               <nav class="main-slider-pag" id="pagination">
                 <a class="main-slider-item" href="#">1</a>
                 <a class="main-slider-item" href="#">2</a>
               </nav>
-              <a class="button" href="#">Открыть каталог</a>
+              <a class="button general-button slider-button" href="#">Открыть каталог</a>
             </li>
             <li class="main-categories-item main-categories-item-discount">
               <h2>Скидки 50%</h2>
@@ -100,30 +100,39 @@
           </header>
           <section class="catalog-wrapper">
             <article class="catalog-item">
-              <div class="badge">Акция</div>
-              <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор с длинным сверлом">
-              <a class="button catalog-button-buy" href="#">Купить</a>
-              <a class="button catalog-button-favorite" href="#">В закладки</a>
-              <a href="#"><p>Перфоратор BOSCH BFG 9000</p></a>
-              <del>32 500 Р.</del><p>25 500 Р.</p>
+              <div class="catalog-picture">
+                <img src="img/bfg9000.jpg" alt="Перфоратор с длинным сверлом">
+              </div>
+              <a class="catalog-button catalog-button-buy" href="#">Купить</a>
+              <a class="catalog-button catalog-button-favorite" href="#">В закладки</a>
+              <div class="catalog-content">
+                <a class="catalog-item-title" href="#">Перфоратор BOSCH BFG 9000</a>
+                <del>32 500 Р.</del>
+                <p>25 500 Р.</p>
+              </div>
             </article>
             <article class="catalog-item">
-              <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
+              <div class="catalog-picture">
+                <img src="img/bfg3000.jpg" alt="Перфоратор с коротким сверлом и массивным основанием">
+              </div>
               <a class="button catalog-button-buy" href="#">Купить</a>
               <a class="button catalog-button-favorite" href="#">В закладки</a>
               <a href="#"><p>Перфоратор BOSCH BFG 3000</p></a>
               <del>2 500 Р.</del><p>15 500 Р.</p>
             </article>
             <article class="catalog-item">
-              <div class="badge">Акция</div>
-              <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
+              <div class="catalog-picture">
+                <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор с средним сверлом и средним основанием">
+              </div>
               <a class="button catalog-button-buy" href="#">Купить</a>
               <a class="button catalog-button-favorite" href="#">В закладки</a>
               <a href="#"><p>Перфоратор BOSCH BFG 6000</p></a>
               <del>30 500 Р.</del><p>25 500 Р.</p>
             </article>
             <article class="catalog-item">
-              <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
+              <div class="catalog-picture">
+                <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор с коротким сверлом и массивным основанием">
+              </div>
               <a class="button catalog-button-buy" href="#">Купить</a>
               <a class="button catalog-button-favorite" href="#">В закладки</a>
               <a href="#"><p>Перфоратор BOSCH BFG 2000</p></a>
