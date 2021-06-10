@@ -55,7 +55,6 @@
         </nav>
       </section>
     </header>
-
     <main>
       <div class="breadcrumbs-container">
         <ul class="breadcrumbs">
@@ -64,6 +63,7 @@
           <li><a class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
           <li class="breadcrumbs-item-icon"></li>
           <li><a class="breadcrumbs-item" href="#">Инструмент</a></li>
+          <li class="breadcrumbs-item-icon"></li>
           <li><a class="breadcrumbs-item">Перфораторы</a></li>
         </ul>
       </div>
@@ -72,15 +72,19 @@
       </div>
       <div class="filter-sort-container">
         <div class="filter-sort">
-          <p class="title-filter">Фильтр</p>
+          <p class="title-filter">Фильтр:</p>
           <section class="sort">
             <div class="sort-wrapper">
               <p class="title-sort">Сортировка</p>
-              <a class="button-sort button-sort-current">По цене</a>
-              <a class="button-sort" href="#">По типу</a>
-              <a class="button-sort" href="#">По функционалу</a>
-              <a class="button-arrow button-arrow-down" href="#"></a>
-              <a class="button-arrow button-arrow-up" href="#"></a>
+              <div class="button-sort-list">
+                <a class="button-sort button-sort-current">По цене</a>
+                <a class="button-sort" href="#">По типу</a>
+                <a class="button-sort" href="#">По функционалу</a>
+              </div>
+              <div class="button-arrow-list">
+                <a class="button-arrow button-arrow-active" href="#"></a>
+                <a class="button-arrow button-arrow-down" href="#"></a>
+              </div>
             </div>
           </section>
         </div>
@@ -327,12 +331,12 @@
           </div>
         </section>
         <div class="pagination-wrapper">
-        <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item pagination-item"><a href="#">Следующая</a></li>
-        </ul>
+          <div class="pagination-list">
+            <a class="pagination-item pagination-item-current">1</a>
+            <a href="#" class="pagination-item">2</a>
+            <a href="#" class="pagination-item">3</a>
+            <a href="#" class="pagination-item pagination-item-next">Следующая</a>
+          </ul>
       </div>
     </section>
     <section class="catalog-info-wrapper">
