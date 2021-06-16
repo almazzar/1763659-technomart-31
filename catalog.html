@@ -23,19 +23,18 @@
       </section>
       <section class="bar-2level">
         <section class="header-2level">
-          <p class="header-2level-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="header-2level-info">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
           <div class="main-header-about">
             <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <p class="contacts-phone-adress">г. Санкт- Петербург, наб. Реки Карповки, 5 лит П</p>
           </div>
           <div>
             <div class="head-username">
-              <a class="menu-item menu-item-username main-login-username">Равшан Джамшутович</a>
-              <a class="menu-item menu-item-username username-exit" href="#"></a>
+              <a class="menu-item main-login-username" href="#">Равшан Джамшутович</a>
+              <a class="menu-item username-exit" href="#"></a>
             </div>
             <div class="menu-useroption">
               <a class="menu-item menu-item-useroption menu-item-useroption-order" href="#">Мои заказы</a>
-              <p class="menu-item menu-item-useroption" href="#">•</p>
               <a class="menu-item menu-item-useroption menu-item-useroption-privat" href="#">Личный кабинет</a>
             </div>
           </div>
@@ -59,11 +58,8 @@
       <div class="breadcrumbs-container">
         <ul class="breadcrumbs">
           <li><a class="breadcrumbs-item-home" href="index.html"></a></li>
-          <li class="breadcrumbs-item-icon"></li>
           <li><a class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
-          <li class="breadcrumbs-item-icon"></li>
           <li><a class="breadcrumbs-item" href="#">Инструмент</a></li>
-          <li class="breadcrumbs-item-icon"></li>
           <li><a class="breadcrumbs-item">Перфораторы</a></li>
         </ul>
       </div>
@@ -92,11 +88,25 @@
       <section class="catalog-container">
         <aside class="filter">
           <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-price">
+            <fieldset class="filter-item">
               <legend>Цена:</legend>
-                <input class="filter-price-range" type="range" id="price" name="price" min="0" max="35000" step="1">
-                <input class="filter-price-input" type="number"></input>
-                <input class="filter-price-input" type="number"></input>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
@@ -143,7 +153,7 @@
             <div class="catalog-grid">
               <article class="catalog-item">
                 <div class="badge badge-catalog">New</div>
-                <div class="catalog-buttons-wrapper">
+                  <div class="catalog-buttons-wrapper">
                   <div class="catalog-buttons-hover">
                     <a class="catalog-button catalog-button-buy" href="#">Купить</a>
                     <a class="catalog-button catalog-button-favorite" href="#">В закладки</a>
@@ -332,7 +342,7 @@
         </section>
         <div class="pagination-wrapper">
           <div class="pagination-list">
-            <a class="pagination-item pagination-item-current">1</a>
+            <a href="#" class="pagination-item pagination-item-current">1</a>
             <a href="#" class="pagination-item">2</a>
             <a href="#" class="pagination-item">3</a>
             <a href="#" class="pagination-item pagination-item-next">Следующая</a>

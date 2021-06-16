@@ -14,7 +14,7 @@
         <section class="header-1level">
           <a class="header-logo" href="index.html" alt="Логотип Техномарта"></a>
           <ul class="header-1level-list">
-            <li class="menu-item"><input class="menu-item-search" type="text" placeholder="Поиск"></input></li>
+            <li class="menu-item"><input class="menu-item-search" type="text" placeholder="Поиск:"></input></li>
             <li class="menu-item menu-item-bookmark"><a href="#">Закладки: 0</a></li>
             <li class="menu-item menu-item-cart"><a href="#">Корзина: 0</a></li>
             <li class="menu-item menu-item-order"><a href="#">Оформить заказ</a></li>
@@ -23,7 +23,7 @@
       </section>
       <section class="bar-2level">
         <section class="header-2level">
-          <p class="header-2level-info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <p class="header-2level-info">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
           <div class="main-header-about">
             <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
             <p class="contacts-phone-adress">г. Санкт- Петербург, наб. Реки Карповки, 5 лит П</p>
@@ -98,7 +98,7 @@
         <section class="main-catalog-popular">
           <header class="h2-header">
             <h2>Популярные товары</h2>
-            <a class="button general-button" href="#">Все популярные товары</a>
+            <a class="button button-popular" href="#">Все популярные товары</a>
           </header>
           <section class="catalog-wrapper">
             <article class="catalog-item">
@@ -172,7 +172,7 @@
         <section class="main-brands">
           <header class="h2-header">
             <h2>Популярные производители</h2>
-            <a class="button" href="#">Все производители</a>
+            <a class="button button-manufactures" href="#">Все производители</a>
           </header>
           <ul class="main-brands-list">
             <li class="main-brands-item"><a href="#">
@@ -237,13 +237,13 @@
               <li class="main-about-item">Автотрейдинг</li>
               <li class="main-about-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a class="button" href="#">Подробнее о компании</a>
+            <a class="button button-about" href="#">Подробнее о компании</a>
           </div>
           <div class="main-contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
             <a class="modal modal-map" href="#"><img src="img/map.jpg"  width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" ></a>
-            <a class="button" href="#">Заблудились? Напишите нам</a>
+            <a class="button button-contacts" href="#">Заблудились? Напишите нам</a>
           </section>
       </section>
       <footer class="footer">
@@ -285,7 +285,7 @@
       </footer>
       <!-- Попап обратная связь -->
       <section class="modal modal-feedback">
-        <form class="feedback-form feedback-form-section" action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback-form-section" action="https://echo.htmlacademy.ru" method="post">
           <div class="feedback-user-info">
             <p>
               <label for="name-input">Ваше имя:</label>
@@ -296,15 +296,15 @@
               <input class="feedback-form" id="email-input" type="email" name="email" placeholder="email@example.com">
             </p>
           </div>
-          <div class="feedback-user-comment"></div>
+          <div class="feedback-user-comment">
           <p>
             <label for="comment-field">Текст письма:</label>
-            <input class="user-comment" id="comment-field" type="textarea" name="comment" placeholder="В свободной форме">
+            <input class="feedback-form user-comment" id="comment-field" type="textarea" name="comment" placeholder="В свободной форме">
           </p>
-        </div>
+          </div>
           <button class="button" type="submit">Отправить</button>
+          <button class="modal-close" type="button">Закрыть</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
       </section>
       <!-- Попап карта -->
       <section class="modal modal-map">
