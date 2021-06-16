@@ -1775,12 +1775,64 @@ li.main-about-item::before  {
   margin-top: 11px;
 }
 
-.filter-item legend {
+.filter legend {
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #C5C5C5;
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-checked.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #C5C5C5;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -36px;
+  width: 8px;
+  height: 8px;
+  background-color: #C5C5C5;
+  border-radius: 50%;
 }
 
 .range-controls {
