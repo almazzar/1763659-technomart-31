@@ -242,7 +242,7 @@
           <div class="main-contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a class="modal modal-map" href="#"><img src="img/map.jpg"  width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" ></a>
+            <a href="#"><img src="img/map.jpg"  width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" ></a>
             <a class="button button-contacts" href="#">Заблудились? Напишите нам</a>
           </section>
       </section>
@@ -286,31 +286,29 @@
       <!-- Попап обратная связь -->
       <section class="modal modal-feedback">
         <form class="feedback-form-section" action="https://echo.htmlacademy.ru" method="post">
-          <div class="feedback-user-info">
+          <div class="feedback-user-content">
             <p>
               <label for="name-input">Ваше имя:</label>
-              <input class="feedback-form" id="name-input" type="name" name="user-name" placeholder="Имя Фамилия">
+              <input class="feedback-form feedback-form-name" id="name-input" type="name" name="user-name" placeholder="Имя Фамилия">
             </p>
             <p>
               <label for="email-input">Ваш e-mail:</label>
               <input class="feedback-form" id="email-input" type="email" name="email" placeholder="email@example.com">
             </p>
-          </div>
-          <div class="feedback-user-comment">
-          <p>
-            <label for="comment-field">Текст письма:</label>
-            <input class="feedback-form user-comment" id="comment-field" type="textarea" name="comment" placeholder="В свободной форме">
-          </p>
+            <p>
+              <label for="comment-field">Текст письма:</label>
+              <input class="feedback-form user-comment" id="comment-field" type="textarea" name="comment" placeholder="В свободной форме">
+            </p>
           </div>
           <button class="button" type="submit">Отправить</button>
-          <button class="modal-close" type="button">Закрыть</button>
+          <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </form>
       </section>
-      <!-- Попап карта -->
+      <!-- Карта -->
       <section class="modal modal-map">
-        <h2>Как до нас добраться</h2>
-      <!-- Здесь будет карта -->
-        <button class="modal-close" type="button">Закрыть</button>
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </section>
   </body>
 </html>
