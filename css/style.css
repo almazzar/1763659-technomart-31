@@ -168,6 +168,7 @@ img {
   color: var(--basic-white);
   background-repeat: no-repeat;
   padding: 0;
+  white-space: nowrap
 }
 
 .menu-item a {
