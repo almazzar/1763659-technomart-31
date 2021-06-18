@@ -241,7 +241,7 @@
           </div>
           <div class="main-contacts">
             <h2>Контакты</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+            <p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
             <a href="#"><img src="img/map.jpg"  width="300" height="158" alt="г. Санкт-Петербург, наб. Реки Карповки, 5 лит П" ></a>
             <a class="button button-contacts" href="#">Заблудились? Напишите нам</a>
           </section>
@@ -253,7 +253,7 @@
             <ul class="footer-nav-1level">
               <li class="menu-item"><a href="#">Компания</a></li>
               <li class="menu-item"><a href="#">Новости</a></li>
-              <li class="menu-item"><a>Каталог</a></li>
+              <li class="menu-item"><a href="catalog.html">Каталог</a></li>
               <li class="menu-item"><a href="#">Доставка</a></li>
               <li class="menu-item"><a href="#">Контакты</a></li>
             </ul>
@@ -297,11 +297,14 @@
             </p>
             <p>
               <label for="comment-field">Текст письма:</label>
-              <input class="feedback-form user-comment" id="comment-field" type="textarea" name="comment" placeholder="В свободной форме">
+              <textarea class="feedback-form user-comment" id="comment-field" type="textarea" name="comment" placeholder="В свободной форме" rows="5" cols="60"></textarea>
             </p>
           </div>
-          <button class="button" type="submit">Отправить</button>
-          <button class="modal-close" type="button" aria-label="Закрыть"></button>
+          <div class="feedback-button">
+            <button class="button button-submit" type="submit">Отправить</button>
+          </div>
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+
         </form>
       </section>
       <!-- Карта -->

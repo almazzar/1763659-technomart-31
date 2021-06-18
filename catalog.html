@@ -361,9 +361,13 @@
     <!-- Попап успешное добавление в корзину -->
     <section class="modal modal-success">
       <p>Товар добавлен в корзину</p>
-      <button class="button primary-button" type="submit">Оформить заказ</button>
-      <button class="button secondary-button" type="submit">Продолжить покупки</button>
-      <button class="modal-close" type="button">Закрыть</button>
+      <div class="feedback-button ok-button">
+        <div class="feedback-modal-wrapper">
+          <button class="button button-ordered" type="submit">Оформить заказ</button>
+          <button class="button button-proceed" type="submit">Продолжить покупки</button>
+        </div>
+      </div>
+      <button class="modal-close" type="button"></button>
     </section>
   </body>
 </html>
