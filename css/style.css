@@ -1231,6 +1231,7 @@ img {
   color: var(--basic-dark);
   background-color: var(--basic-white);
   font-size: 21px;
+  font-weight: 700;
   line-height: 30px;
   font-family: "cuprum", Arial, sans-serif;
   text-decoration: none;
@@ -1262,6 +1263,8 @@ img {
   font-family: "cuprum", Arial, sans-serif;
   color: var(--basic-black);
   list-style-type: none;
+  margin-left: -40px;
+  margin-top: -10px;
 }
 
 li.main-about-item::before  {
