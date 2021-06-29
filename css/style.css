@@ -75,8 +75,8 @@ h1 {
   font-weight: 400;
   background-color: var(--basic-background);
   display: inline-block;
+  vertical-align: middle;
   margin: 30px;
-
 }
 
 .h1-catalog-container {
@@ -318,6 +318,7 @@ img {
   background-color: var(--basic-red);
   max-width: 220px;
   display: inline-block;
+  vertical-align: middle;
   margin: 0;
   padding: 0;
   margin-bottom: -5px;
@@ -478,6 +479,7 @@ img {
   color: var(--basic-white);
   text-decoration: none;
   display: inline-block;
+  vertical-align: middle;
   padding: 20px 28px 15px 34px;
   margin-top: -8px;
 }
@@ -889,6 +891,7 @@ img {
   padding: 10px 24px 10px 32px;
   font-size: 17px;
   line-height: 18px;
+  vertical-align: middle;
   font-weight: bold;
   display: inline-block;
   border-radius: 3px 0 0 3px;
@@ -903,6 +906,7 @@ img {
   background-color: var(--basic-red);
   transform: rotate(45deg);
   display: inline-block;
+  vertical-align: middle;
   right: -14px;
   top: 6px;
 }
@@ -1211,6 +1215,7 @@ img {
   background-color: var(--basic-dark);
   padding: 13px;
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   min-width: 240px;
 }
@@ -1222,6 +1227,7 @@ img {
 .main-services-item-current a {
   padding: 13px;
   display: inline-block;
+  vertical-align: middle;
   text-decoration: none;
   min-width: 240px;
 }
@@ -1270,6 +1276,7 @@ img {
 li.main-about-item::before  {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   background-color: var(--basic-red);
   margin-right: 12px;
   width: 25px;
@@ -1426,6 +1433,7 @@ li.main-about-item::before  {
   background-position: 35px center;
   background-repeat: no-repeat;
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   padding: 7px 40px 8px 74px;
 }
@@ -1525,6 +1533,7 @@ li.main-about-item::before  {
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
+  vertical-align: middle;
   border-radius: 25px;
 }
 
@@ -1814,6 +1823,7 @@ li.main-about-item::before  {
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   display: inline-block;
+  vertical-align: middle;
   width: 14px;
   height: 12px;
 }
